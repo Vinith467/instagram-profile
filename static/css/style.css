@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-color: blacK;
 }
 body {
   header {
@@ -135,13 +135,17 @@ body {
     }
     .post-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3px;
-      padding: 10px;
-      img {
-        width:100%;
-        height:100%;
-        object-fit: cover;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2px;
+      padding: 2px;
+      .post {
+        aspect-ratio: 1/1;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          margin-bottom: -10px;
+        }
       }
     }
   }
